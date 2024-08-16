@@ -563,6 +563,8 @@ nav {
 
     .nav-menu {
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .nav-item {
@@ -594,3 +596,4 @@ nav {
         /* Show menu button */
     }
 }
+
