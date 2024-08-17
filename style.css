@@ -23,8 +23,6 @@ body {
     padding-top: 20px;
 }
 
-
-
 .header-menu {
     display: flex;
     justify-content: space-between;
@@ -51,7 +49,8 @@ body {
     color: white;
     /* Adjust text color as needed */
 }
-.mobile-nav-header{
+
+.mobile-nav-header {
     display: none;
 }
 
@@ -159,6 +158,10 @@ body {
     order: 2;
 }
 
+.header .line-container {
+    padding-top: 10px;
+}
+
 .menu-icon {
     display: none;
 }
@@ -245,9 +248,7 @@ nav {
 
 .banner-content {
     padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    top: -70px;
+
 }
 
 .banner-title {
@@ -257,7 +258,7 @@ nav {
     top: 70px;
 }
 
-.banner-description {
+.banner-content .banner-description {
     font-size: 98px;
     /* Adjust font size as needed */
     margin-bottom: 20px;
@@ -320,16 +321,18 @@ nav {
         align-self: flex-start;
         cursor: pointer;
         color: white;
-        
+
     }
 
-    .mobile-nav-header{
+    .mobile-nav-header {
         display: block;
     }
-    .mobile-nav-header .appointment-image{
+
+    .mobile-nav-header .appointment-image {
         width: 20px;
         padding-left: 10px;
     }
+
     .header {
         flex-direction: column;
         align-items: center;
@@ -456,7 +459,6 @@ nav {
     }
 
     .banner {
-        height: 400px;
         background-position: top;
     }
 
@@ -486,6 +488,9 @@ nav {
         display: block;
         width: 100%;
         text-align: center;
+    }
+    .banner-content .banner-description {
+        font-size: 90px;
     }
 }
 
@@ -559,6 +564,7 @@ nav {
     }
 }
 
+
 /* Large mobile devices and tablets */
 @media (min-width: 900px) and (max-width: 1024px) {
     .header {
@@ -631,9 +637,7 @@ nav {
 
 /* Styles for larger screens */
 @media (min-width: 1025px) {
-    .header {
-        padding: 20px 50px;
-    }
+
 
     .header-center {
         font-size: 44px;
@@ -674,6 +678,7 @@ nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-left: 30px;
     }
 
     .nav-item {
@@ -718,7 +723,7 @@ nav {
 @media (min-width: 300px) {
 
     .mobile-nav-header select {
-       
+
         margin-left: 10px;
     }
 
@@ -733,10 +738,7 @@ nav {
         display: flow-root;
     }
 
-    .banner-title {
-        position: relative;
-        top: 40px;
-    }
+
 
     .menu-icon {
         display: block;
