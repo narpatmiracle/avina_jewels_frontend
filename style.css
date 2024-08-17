@@ -169,6 +169,7 @@ nav {
 
 .nav-item {
     margin: 0 60px;
+    list-style: none;
 }
 
 .nav-item a {
@@ -346,6 +347,7 @@ nav {
 
     .nav-item {
         margin: 10px 0;
+        list-style: none;
     }
 
     .banner {
@@ -354,7 +356,7 @@ nav {
     }
 
     .banner-description {
-        font-size: 48px;
+        font-size: 70px;
     }
 
     .shop-now-button {
@@ -398,7 +400,7 @@ nav {
     }
 
     .header-left .book-appointment {
-        font-size: 16px;
+        font-size: 9px;
     }
 
     .header-left .appointment-image {
@@ -431,6 +433,7 @@ nav {
 
     .nav-item {
         margin: 0 20px;
+        list-style: none;
     }
 
     .banner {
@@ -459,7 +462,7 @@ nav {
 
     .header-center {
         font-size: 36px;
-        right: 20px;
+        right: 70px;
     }
 
     .header-left select {
@@ -500,6 +503,7 @@ nav {
 
     .nav-item {
         margin: 0 20px;
+        list-style: none;
     }
 
     .banner {
@@ -569,6 +573,7 @@ nav {
 
     .nav-item {
         margin: 0 60px;
+        list-style: none;
     }
 
     .banner {
@@ -594,6 +599,18 @@ nav {
     .mobile-menu-btn {
         display: block;
         /* Show menu button */
+    }
+}
+
+@media (max-width: 375px) {
+
+    .banner-title {
+        position: relative;
+        top: 40px;
+    }
+
+    .banner-description {
+        font-size: 50px;
     }
 }
 
