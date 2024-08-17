@@ -384,7 +384,7 @@ nav {
 
     }
 
-    
+
 
     .header-left {
         display: none;
@@ -656,13 +656,22 @@ nav {
         display: block;
         /* Show menu button */
     }
+    
 }
 
-@media (max-width: 375px) {
+@media (min-width: 300px) {
 
     .banner-title {
         position: relative;
         top: 40px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 20%;
+        order: 3;
+        display: flex;
+        justify-content: center;
     }
 
     .banner-description {
