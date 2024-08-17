@@ -13,59 +13,84 @@
 
     <div class="header">
         <!-- Left Side -->
-        <div class="header-left">
-            <select>
-                <option value="INR">INR</option>
-                <option value="USD">USD</option>
-            </select>
-            <a href="#" class="book-appointment">
-                Book an Appointment
-                <img src="./images/book.png" alt="Appointment Image" class="appointment-image">
-            </a>
-        </div>
+        <div class="header-menu">
+            <div class="header-left">
+                <select>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                </select>
+                <a href="#" class="book-appointment">
+                    Book an Appointment
+                    <img src="./images/book.png" alt="Appointment Image" class="appointment-image">
+                </a>
+            </div>
 
-        <!-- Center Logo/Title -->
-        <div class="header-center">
-            Avina Jewels
-        </div>
+            <!-- Center Logo/Title -->
+            <div class="header-center">
+                Avina Jewels
+            </div>
 
-        <!-- Right Side Icons -->
-        <div class="header-right">
-            <a href="#"><i class="fa-solid fa-location-dot"></i><span class="separator"> |</span></a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i><span class="separator"> |</span></a>
-            <a href="#"><i class="fa-solid fa-user"></i><span class="separator"> |</span></a>
-            <a href="#"><i class="fa-solid fa-comments"></i></a>
+            <!-- Right Side Icons -->
+            <div class="header-right">
+                <a href="#"><i class="fa-solid fa-location-dot"></i><span class="separator"> |</span></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i><span class="separator"> |</span></a>
+                <a href="#"><i class="fa-solid fa-user"></i><span class="separator"> |</span></a>
+                <a href="#"><i class="fa-solid fa-comments"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="line-container">
-        <div class="line"></div>
-        <img src="./images/Vector (6).png" alt="Center Image" class="center-image">
-        <div class="line"></div>
+        <div class="line-container">
+            <div class="line"></div>
+            <img src="./images/Vector (6).png" alt="Center Image" class="center-image">
+            <div class="line"></div>
+        </div>
+        <div class="menu-icon">
+            <div id="menu-icon-btn">
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        </div>
     </div>
     <header class="navbar">
         <div class="container">
             <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#">Engagement Rings</a></li>
-                    <li class="nav-item"><a href="#">Eternity Rings</a></li>
-                    <li class="nav-item"><a href="#">Jewellery</a></li>
-                    <li class="nav-item"><a href="#">Diamonds</a></li>
-                    <li class="nav-item"><a href="#">Color Stones</a></li>
-                    <li class="nav-item"><a href="#">Bespoke</a></li>
-                </ul>
+                <div class="nav-menu">
+                    <div class="nav-item"><a href="#">Engagement Rings</a></div>
+                    <div class="nav-item"><a href="#">Eternity Rings</a></div>
+                    <div class="nav-item"><a href="#">Jewellery</a></div>
+                    <div class="nav-item"><a href="#">Diamonds</a></div>
+                    <div class="nav-item"><a href="#">Color Stones</a></div>
+                    <div class="nav-item"><a href="#">Bespoke</a></div>
+                </div>
             </nav>
         </div>
     </header>
+
+
+
+
 
     <section class="banner">
         <div class="banner-content">
             <h1 class="banner-title">Every Piece Of Jewellery Tells A Story</h1>
             <p class="banner-description">Classic Jewellery Collection</p>
             <a href="#" class="shop-now-button">Shop Now</a>
-
         </div>
     </section>
 
+    <script>
+        let menu = document.getElementById('menu-icon-btn');
+        console.log(menu);
+
+        let navbar = document.querySelector('.navbar');
+        menu.addEventListener("click", () => {
+            if (navbar.getAttribute("style") && navbar.getAttribute("style").includes("display:block")) {
+                navbar.setAttribute("style", "display:none")
+            } else {
+                navbar.setAttribute("style", "display:block");
+            }
+        })
+
+
+    </script>
 </body>
 
 </html>
