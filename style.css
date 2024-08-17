@@ -36,11 +36,26 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    /* Adjust spacing between select and link */
     margin-left: 35px;
 }
 
 .header-left select {
+    border: none;
+    /* Remove border */
+    background: none;
+    /* Remove background */
+    padding: 5px;
+    /* Adjust padding as needed */
+    font-size: 16px;
+    /* Adjust font size as needed */
+    color: white;
+    /* Adjust text color as needed */
+}
+.mobile-nav-header{
+    display: none;
+}
+
+.mobile-nav-header select {
     border: none;
     /* Remove border */
     background: none;
@@ -283,12 +298,38 @@ nav {
     /* Background color on hover */
 }
 
-
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    align-self: flex-end;
+    cursor: pointer;
+}
 
 
 
 /* Base styles for mobile devices */
 @media (max-width: 767px) {
+
+    .close-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        align-self: flex-start;
+        cursor: pointer;
+        color: white;
+        
+    }
+
+    .mobile-nav-header{
+        display: block;
+    }
+    .mobile-nav-header .appointment-image{
+        width: 20px;
+        padding-left: 10px;
+    }
     .header {
         flex-direction: column;
         align-items: center;
@@ -393,8 +434,6 @@ nav {
         justify-content: end;
     }
 
-
-
     .header-left {
         display: none;
     }
@@ -407,6 +446,7 @@ nav {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 20px;
     }
 
 
@@ -666,9 +706,32 @@ nav {
         /* Show menu button */
     }
 
+    .nav-item {
+        margin: 10px 0;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 300px) {
+
+    .mobile-nav-header select {
+       
+        margin-left: 10px;
+    }
+
+    .book-appointment {
+        color: white;
+        padding: 5px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 20px;
+        font-family: "Poppins", sans-serif;
+        display: flow-root;
+    }
 
     .banner-title {
         position: relative;

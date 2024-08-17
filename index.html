@@ -50,8 +50,19 @@
         </div>
     </div>
     <div id="mobile-nav">
+        <button id="close-btn" class="close-btn">✕</button>
         <header class="navbar">
             <div class="container">
+                <div class="mobile-nav-header">
+                    <select>
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                    <a href="#" class="book-appointment">
+                        Book an Appointment
+                        <img src="./images/book.png" alt="Appointment Image" class="appointment-image">
+                    </a>
+                </div>
                 <nav>
                     <div class="nav-menu">
                         <div class="nav-item"><a href="#">Engagement Rings</a></div>
@@ -66,10 +77,6 @@
         </header>
     </div>
 
-
-
-
-
     <section class="banner">
         <div class="banner-content">
             <h1 class="banner-title">Every Piece Of Jewellery Tells A Story</h1>
@@ -81,12 +88,18 @@
     <script>
         let menu = document.getElementById('menu-icon-btn');
         let navbar = document.getElementById('mobile-nav');
+        let closeBtn = document.getElementById('close-btn');
+
+        // Open the mobile navigation when the menu button is clicked
         menu.addEventListener("click", () => {
-            navbar.style.display = "flex"
-        })
-        navbar.addEventListener("click", () => {
-            navbar.style.display = "none"
-        })
+            navbar.style.display = "flex";
+        });
+
+        // Close the mobile navigation when the close button is clicked
+        closeBtn.addEventListener("click", () => {
+            navbar.style.display = "none";
+        });
+
 
     </script>
 </body>
