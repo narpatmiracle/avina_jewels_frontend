@@ -851,7 +851,7 @@ p {
     color: #555555;
 }
 /* Ultra-wide devices (2560px and above) */
-@media (min-width: 2560px) {
+@media (max-width: 2560px) {
     .features-section {
         padding: 80px 180px;
         gap: 40px; /* Increase gap between features */
