@@ -129,6 +129,123 @@
         </div>
     </section>
 
+    <section class="product-section">
+        <div class="product-info">
+            <h2 class="product-title">The Orrin Gems</h2>
+            <p class="product-description">Design your jewellery in 3 simple <br> steps and our experts will
+                custom-<br>craft it for you.</p>
+        </div>
+        <div class="product-slider">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <!-- First 4 images -->
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image1.png" alt="Image 1" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">APHRODITE</h3>
+                                <p class="card-price">From INR 1,54,700.70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image2.png" alt="Image 2" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">HALF</h3>
+                                <p class="card-price">From INR 71,845.55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image3.png" alt="Image 3" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">DELICACY</h3>
+                                <p class="card-price">From INR 92,052.64</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image4.png" alt="Image 4" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">KINDREA</h3>
+                                <p class="card-price">From INR 1,21,548.20</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second 4 images -->
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image3.png" alt="Image 5" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 5</h3>
+                                <p class="card-price">From INR 50,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image2.png" alt="Image 6" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 6</h3>
+                                <p class="card-price">From INR 60,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image4.png" alt="Image 7" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 7</h3>
+                                <p class="card-price">From INR 70,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image1.png" alt="Image 8" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 8</h3>
+                                <p class="card-price">From INR 80,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Last 2 images -->
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image2.png" alt="Image 9" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 9</h3>
+                                <p class="card-price">From INR 90,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./images/product/image4.png" alt="Image 10" class="card-image">
+                            <div class="card-content">
+                                <h3 class="card-title">IMAGE 10</h3>
+                                <p class="card-price">From INR 100,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <script>
         let menu = document.getElementById('menu-icon-btn');
@@ -147,6 +264,21 @@
 
 
     </script>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                document.querySelector('.dot.active').classList.remove('active');
+                dot.classList.add('active');
+                document.querySelector('.slider-wrapper').style.transform = `translateX(-${index * 80}%)`;
+            });
+        });
+
+    </script>
+
+
 </body>
 
 </html>
