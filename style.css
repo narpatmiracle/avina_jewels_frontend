@@ -784,3 +784,142 @@ nav {
         font-size: 50px;
     }
 }
+
+
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    text-align: center;
+    gap: 20px;
+    background-image: url('./images/Isolation_Mode.svg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the background image */
+    padding: 50px 120px;
+    border-radius: 20px;
+}
+
+.feature {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 150px 150px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 270px;
+    max-height: 360px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    margin-bottom: 20px;
+}
+
+.feature-icon img {
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+}
+
+h3 {
+    font-family: 'Federo', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.under-h3-image {
+    display: block;
+    margin: 10px auto;
+    /* Centers the image horizontally and adds space around it */
+    width: 50px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+p {
+    font-family: 'Kurale', sans-serif;
+    font-size: 15px;
+    color: #555555;
+}
+/* Ultra-wide devices (2560px and above) */
+@media (min-width: 2560px) {
+    .features-section {
+        padding: 80px 180px;
+        gap: 40px; /* Increase gap between features */
+    }
+
+    .feature {
+        max-width: 350px;
+        max-height: 500px;
+        padding: 30px;
+    }
+
+    .feature-icon img {
+        width: 60%;
+        margin-top: 80px;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .under-h3-image {
+        width: 60px; /* Increase size of the decorative image under h3 */
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .features-section {
+        flex-wrap: wrap;
+       display: flex;
+    }
+
+    .feature {
+        flex: 1 1 45%;
+        /* max-width: 45%; */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 40%;
+        /* max-width: 100%; */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
