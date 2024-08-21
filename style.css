@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Federo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
 body {
     font-family: Arial, sans-serif;
@@ -10,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f6f6f6;
+
 }
 
 .header {
@@ -1045,6 +1047,200 @@ p {
     background-color: #00003D;
 }
 
+.svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.svg-container .diamond-icon {
+    position: absolute;
+    top: -50px;
+    right: 50px;
+}
+
+.svg-container .star-icon {
+    margin-right: 90%;
+}
+
+.svg-image-1,
+.svg-image-2,
+.svg-image-3,
+.svg-image-4 {
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.icon-title {
+    width: 50%;
+    margin-top: -6%;
+    margin-right: 25%;
+}
+
+.svg-container .icon-title h2 {
+    font-size: 64px;
+    font-family: "Fleur De Leah", serif;
+    color: #00003D;
+    margin-bottom: 20px;
+}
+
+.svg-container .icon-title p {
+    font-size: 24px;
+    color: #252525;
+    line-height: 1.6;
+    width: 64%;
+}
+
+.shop-now-button-2 {
+    font-size: 20px;
+    border: 2px solid #00003D;
+    color: #00003D;
+    border-radius: 35px;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: "Kurale", serif;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.shop-now-button-2:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: #00003D;
+}
+
+.heart-diamond-icon {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.diamond-shape {
+    position: absolute;
+    /* bottom: 20px; */
+    right: 10%;
+}
+
+.diamond-shape img {
+    width: 300px;
+    height: auto;
+}
+
+/* Media Query for screen sizes between 1024px and 768px */
+@media (max-width: 1024px) {
+    .icon-title {
+        margin-top: -100px;
+        margin-right: 250px;
+    }
+
+    .svg-container .icon-title h2 {
+        font-size: 40px;
+    }
+
+    .svg-container .icon-title p {
+        font-size: 28px;
+    }
+
+    .shop-now-button-2 {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .svg-image-1,
+    .svg-image-2,
+    .svg-image-3,
+    .svg-image-4 {
+        width: 120px;
+    }
+
+    .diamond-shape img {
+        width: 250px;
+    }
+
+    .svg-container .diamond-icon {
+        top: -30px;
+        right: 30px;
+    }
+
+    .heart-diamond-icon {
+        top: 85%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Media Query for screen sizes below 768px */
+@media (max-width: 768px) {
+    .svg-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .icon-title {
+
+        text-align: center;
+    }
+
+    .svg-container .icon-title h2 {
+        font-size: 32px;
+    }
+
+    .svg-container .icon-title p {
+        font-size: 20px;
+    }
+
+    .shop-now-button-2 {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .svg-image-1,
+    .svg-image-2,
+    .svg-image-3,
+    .svg-image-4 {
+        width: 100px;
+    }
+
+    .diamond-shape img {
+        width: 200px;
+    }
+
+    .svg-container .star-icon {
+        margin-right: 115%;
+    }
+
+    .svg-container .diamond-icon {
+        position: relative;
+        top: -38px;
+        right: -80px;
+        margin-bottom: -90px;
+    }
+
+    .heart-diamond-icon {
+        position: relative;
+        top: -104px;
+        left: 80px;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .diamond-shape {
+        position: relative;
+        /* right: 0; */
+        top: -80px;
+    }
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
     .product-section {
@@ -1148,5 +1344,99 @@ p {
     .card-title::before,
     .card-title::after {
         width: 20px;
+    }
+}
+
+
+.diamond-info .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #DEDEE4;
+}
+
+.diamond-info .row .image {
+    flex: 1 1 50rem;
+}
+
+.diamond-info .row .image img {
+    width: 100%;
+}
+
+.diamond-info .row .content {
+    flex: 1 1 45rem;
+    margin-left: 5%;
+
+}
+
+.diamond-info .row .content h3 {
+    color: #00003D;
+    font-size: 44px;
+    line-height: 1.8;
+    font-family: "Federo", sans-serif;
+    position: relative;
+    /* Ensure the ::after is positioned relative to the h3 */
+    display: inline-block;
+    /* Required for the underline to match the h3 width */
+}
+
+.diamond-info .row .content h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 500px;
+    height: 2px;
+    background-color: #00003D;
+}
+
+.diamond-info .row .content p {
+    color: #00003D;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-family: "Kurale", serif;
+    width: 85%;
+    letter-spacing: 2px;
+}
+
+
+
+
+/* Medium screens (Tablets and small desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .diamond-info .row {
+        padding: 2rem 0;
+    }
+
+    .diamond-info .row .content h3 {
+        font-size: 38px;
+    }
+
+    .diamond-info .row .content p {
+        font-size: 1.4rem;
+        width: 85%;
+    }
+}
+
+/* Small screens (Phones) */
+@media (max-width: 767px) {
+    .diamond-info .row {
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+
+    .diamond-info .row .image,
+    .diamond-info .row .content {
+        flex: 1 1 100%;
+        margin-left: 0;
+    }
+
+    .diamond-info .row .content h3 {
+        font-size: 30px;
+    }
+
+    .diamond-info .row .content p {
+        font-size: 1.3rem;
+        width: 100%;
     }
 }
