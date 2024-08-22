@@ -11,7 +11,6 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f6f6f6;
-
 }
 
 .header {
@@ -1347,7 +1346,6 @@ p {
 
 .diamond-info .row {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     background-color: #DEDEE4;
 }
@@ -1433,4 +1431,166 @@ p {
         font-size: 1.3rem;
         width: 100%;
     }
+}
+
+
+.image-swiper-container {
+    position: relative;
+    margin: 0 auto;
+    width: calc(min(51rem, 90%));
+    min-height: 100vh;
+    column-gap: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.swiper-container {
+    position: relative;
+
+}
+
+.swiper {
+    width: 100%;
+    padding: 60px 0 95px 0;
+
+}
+
+.swiper-slide {
+    width: 10rem;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    position: relative;
+}
+
+.swiper-slide .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 100%;
+}
+
+.swiper-slide .slide-content img {
+    width: 280px;
+    height: 350px;
+    border-radius: 20px;
+
+}
+
+.swiper-button-prev {
+    background: white;
+    border-radius: 50%;
+    top: 47%;
+    Left: -30px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+}
+
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-button-prev.bx {
+    font-size: 25px;
+}
+
+.swiper-button-next {
+    background: white;
+    border-radius: 50%;
+    top: 47%;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
+}
+
+.swiper-button-next::after {
+    content: "";
+}
+
+.swiper-button-next .bx {
+    font-size: 25px;
+}
+
+@media (min-width:760px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: flex;
+    }
+}
+
+
+/* Title Styling */
+.swiper-title {
+    margin-top: 20px;
+    /* Space between Swiper and title */
+    background-image: url('./images/story_images/Vector (3).svg');
+    /* Set image as background */
+    background-size: cover;
+    /* Cover the container with the background image */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    /* Adjust padding as needed for spacing */
+    text-align: center;
+    /* Center the text */
+    color: #fff;
+    /* Set text color to contrast with background */
+    background-size: 13%;
+    background-position: bottom;
+}
+
+.swiper-title h6 {
+    font-size: 20px;
+    color: #00003D;
+    /* Ensure text is readable against background */
+    margin-bottom: 5px;
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.swiper-title h1 {
+    font-size: 60px;
+    color: #00003D;
+    /* Ensure text is readable against background */
+    margin: 0;
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    width: 280px;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 61, 0),
+            /* End color with transparency */
+            rgba(0, 0, 61, 1)
+            /* Start color with transparency */
+        );
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.text-overlay h6 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Adjust as needed */
+    margin-top: 60%;
 }

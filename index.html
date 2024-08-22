@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avina Jewels</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -317,7 +319,68 @@
         </div>
     </section>
 
+    <section class="image-swiper-container">
+        <div class="swiper-title">
+            <h6>SEASON MUST-HAVES</h6>
+            <h1>Shop by Categories</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/story_images/01.png" alt="">
+                            <div class="text-overlay">
+                                <h6>Engagement Rings</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/story_images/02.png" alt="">
+                            <div class="text-overlay">
+                                <h6> Diamonds</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/story_images/03.png" alt="">
+                            <div class="text-overlay">
+                                <h6>Jewellery</h6>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/story_images/04.png" alt="">
+                            <div class="text-overlay">
+                                <h6>Eternity Rings</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="./images/story_images/05.png" alt="">
+                            <div class="text-overlay">
+                                <h6>Color stones</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         let menu = document.getElementById('menu-icon-btn');
         let navbar = document.getElementById('mobile-nav');
@@ -348,7 +411,45 @@
         });
 
     </script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 4,
+                slideShadows: true,
+            },
+            loop: true,
+            loopedSlides: 3, // Adjust this based on the number of slides you have
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: {
+                forceToAxis: true,
+                releaseOnEdges: true,
+            },
+            breakpoints: {
+                560: {
+                    slidesPerView: 2.5,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
 
+    </script>
 
 </body>
 
