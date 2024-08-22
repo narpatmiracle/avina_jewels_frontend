@@ -1594,3 +1594,102 @@ p {
     /* Adjust as needed */
     margin-top: 60%;
 }
+
+
+.Appointment {
+    position: relative;
+    background-image: url(./images/Appointment.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-attachment: local;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Appointment-title {
+    position: relative;
+    right: 22%;
+    z-index: 1;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.Appointment-title h1 {
+    font-size: 60px;
+    /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #00003D;
+
+}
+
+.Appointment-title p {
+    color: #00003D;
+    font-size: 22px;
+    /* Adjust the font size as needed */
+    margin-bottom: 30px;
+    /* Space below the paragraph */
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 1024px) {
+    .Appointment {
+        height: 70vh; /* Reduce height on medium screens */
+    }
+    .Appointment-title{
+        right: 0%;
+    }
+    
+    .Appointment-title h1 {
+        font-size: 48px; /* Reduce font size */
+    }
+    
+    .Appointment-title p {
+        font-size: 20px; /* Reduce font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .Appointment {
+        height: 50vh; /* Further reduce height on smaller screens */
+    }
+    
+    .Appointment-title h1 {
+        font-size: 36px; /* Further reduce font size */
+    }
+    
+    .Appointment-title p {
+        font-size: 18px; /* Further reduce font size */
+    }
+}
+@media (min-width: 605px) {
+
+}
+
+@media (max-width: 480px) {
+    .Appointment {
+        height: auto; /* Allow height to be flexible on mobile */
+        padding: 40px 20px; /* Add more padding for comfort */
+        width: max-content;
+    }
+    
+    .Appointment-title h1 {
+        font-size: 28px; /* Further reduce font size for mobile */
+    }
+    
+    .Appointment-title p {
+        font-size: 16px; /* Further reduce font size for mobile */
+    }
+    
+   
+}
