@@ -315,476 +315,7 @@ nav {
 }
 
 
-/* Base styles for mobile devices */
-@media (max-width: 767px) {
 
-    .mobile-right-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .mobile-right-header a {
-        text-decoration: none;
-        color: white;
-        /* Adjust color as needed */
-        font-size: 18px;
-        /* Adjust font size as needed */
-    }
-
-    .mobile-right-header .separator {
-        margin: 0 5px;
-        /* Adjust spacing around the separator */
-        color: white;
-        /* Adjust color as needed */
-    }
-
-    .mobile-right-header a:last-child .separator {
-        display: none;
-        /* Hide separator after the last item */
-    }
-
-    .close-btn {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 24px;
-        align-self: flex-start;
-        cursor: pointer;
-        color: white;
-
-    }
-
-    .mobile-nav-header {
-        display: block;
-    }
-
-    .mobile-nav-header .appointment-image {
-        width: 20px;
-        padding-left: 10px;
-    }
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .header-left,
-    .header-right {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .header-center {
-        font-size: 28px;
-        margin: 10px 0;
-        right: 0;
-    }
-
-    .header-left select {
-        font-size: 14px;
-    }
-
-    .header-left .book-appointment {
-        font-size: 14px;
-        gap: 10px;
-    }
-
-    .header-left .appointment-image {
-        width: 16px;
-        height: 16px;
-        left: 5px;
-    }
-
-    .header-right {
-        display: block;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header-right a {
-        font-size: 16px;
-    }
-
-    .line-container {
-        flex-direction: column;
-        align-items: center;
-        order: 1;
-        width: 20%;
-    }
-
-    .line {
-        width: 100%;
-    }
-
-    .center-image {
-        width: 40px;
-        height: 40px;
-        margin: 10px 0;
-    }
-
-    .header {
-        flex-direction: row;
-    }
-
-    .menu-icon {
-        display: block;
-        width: 20%;
-        order: 3;
-        display: flex;
-        justify-content: center;
-    }
-
-    #menu-btn {
-        font-size: 1rem;
-        border-radius: .5rem;
-        background: #eee;
-        color: var(--green);
-        padding: 1rem 1rem;
-        cursor: pointer;
-        order: 3;
-    }
-
-    .header-menu {
-        order: 2;
-        width: 60%;
-    }
-
-    #mobile-nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 999;
-        width: 100%;
-        height: 100vh;
-        justify-content: end;
-        background: rgba(0, 0, 0, 0.445);
-        display: none;
-    }
-
-    .navbar {
-        width: 50%;
-        justify-content: end;
-    }
-
-    .header-left {
-        display: none;
-    }
-
-    .header-right {
-        display: none;
-    }
-
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-
-    .nav-item {
-        margin: 10px 0;
-        list-style: none;
-    }
-
-    .banner {
-        background-position: top;
-    }
-
-    .banner-description {
-        font-size: 70px;
-    }
-
-    .shop-now-button {
-        padding: 8px 16px;
-    }
-
-    /* Show mobile button only on small devices */
-    .mobile-menu-btn {
-        display: block;
-        background-color: #00003D;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        cursor: pointer;
-        margin: 10px;
-    }
-
-    .mobile-menu-btn-container {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    .banner-content .banner-description {
-        font-size: 90px;
-    }
-}
-
-/* Medium mobile devices */
-@media (min-width: 768px) and (max-width: 899px) {
-    .header {
-        padding: 20px;
-    }
-
-    .header-center {
-        font-size: 36px;
-        right: 20px;
-    }
-
-    .header-left select {
-        font-size: 16px;
-    }
-
-    .header-left .book-appointment {
-        font-size: 9px;
-    }
-
-    .header-left .appointment-image {
-        width: 18px;
-        height: 18px;
-    }
-
-    .header-right a {
-        font-size: 18px;
-    }
-
-    .line-container {
-        padding: 0 10px;
-    }
-
-    .center-image {
-        width: 45px;
-        height: 45px;
-    }
-
-    .navbar {
-        padding: 15px 0;
-    }
-
-    .nav-menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-item {
-        margin: 0 20px;
-        list-style: none;
-    }
-
-    .banner {
-        height: 500px;
-    }
-
-    .banner-description {
-        font-size: 72px;
-    }
-
-    .shop-now-button {
-        padding: 10px 20px;
-    }
-
-    /* Hide mobile button on medium mobile devices */
-    .mobile-menu-btn {
-        display: none;
-    }
-}
-
-
-/* Large mobile devices and tablets */
-@media (min-width: 900px) and (max-width: 1024px) {
-    .header {
-        padding: 20px;
-    }
-
-    .header-center {
-        font-size: 36px;
-        right: 70px;
-    }
-
-    .header-left select {
-        font-size: 16px;
-    }
-
-    .header-left .book-appointment {
-        font-size: 16px;
-    }
-
-    .header-left .appointment-image {
-        width: 18px;
-        height: 18px;
-    }
-
-    .header-right a {
-        font-size: 18px;
-    }
-
-    .line-container {
-        padding: 0 10px;
-    }
-
-    .center-image {
-        width: 45px;
-        height: 45px;
-    }
-
-    .navbar {
-        padding: 15px 0;
-    }
-
-    .nav-menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-item {
-        margin: 0 20px;
-        list-style: none;
-    }
-
-    .banner {
-        height: 500px;
-    }
-
-    .banner-description {
-        font-size: 72px;
-    }
-
-    .shop-now-button {
-        padding: 10px 20px;
-    }
-
-    /* Hide mobile button on large mobile devices */
-    .mobile-menu-btn {
-        display: none;
-    }
-}
-
-/* Styles for larger screens */
-@media (min-width: 1025px) {
-
-
-    .header-center {
-        font-size: 44px;
-        right: 80px;
-    }
-
-    .header-left select {
-        font-size: 16px;
-    }
-
-    .header-left .book-appointment {
-        font-size: 16px;
-    }
-
-    .header-left .appointment-image {
-        width: 20px;
-        height: 20px;
-    }
-
-    .header-right a {
-        font-size: 18px;
-    }
-
-    .line-container {
-        padding: 0;
-    }
-
-    .center-image {
-        width: 50px;
-        height: 50px;
-    }
-
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .nav-menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 30px;
-    }
-
-    .nav-item {
-        margin: 0 60px;
-        list-style: none;
-    }
-
-    .banner {
-        height: 600px;
-    }
-
-    .banner-description {
-        font-size: 98px;
-    }
-
-    .shop-now-button {
-        padding: 10px 20px;
-    }
-
-    /* Hide mobile button on larger screens */
-    .mobile-menu-btn {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .mobile-menu-btn {
-        display: block;
-        /* Show menu button */
-    }
-
-    .nav-item {
-        margin: 10px 0;
-        list-style: none;
-        align-items: center;
-        text-align: center;
-    }
-
-}
-
-@media (min-width: 300px) {
-
-    .mobile-nav-header select {
-
-        margin-left: 10px;
-    }
-
-    .book-appointment {
-        color: white;
-        padding: 5px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        margin-right: 15px;
-        font-family: "Poppins", sans-serif;
-        display: flow-root;
-    }
-
-
-
-    .menu-icon {
-        display: block;
-        width: 20%;
-        order: 3;
-        display: flex;
-        justify-content: center;
-    }
-
-    .banner-description {
-        font-size: 50px;
-    }
-}
 
 
 
@@ -848,49 +379,6 @@ p {
     font-family: 'Kurale', sans-serif;
     font-size: 15px;
     color: #555555;
-}
-
-/* Ultra-wide devices (2560px and above) */
-
-@media (max-width: 1200px) {
-    .features-section {
-        flex-wrap: wrap;
-        display: flex;
-    }
-
-    .feature {
-        flex: 1 1 45%;
-        /* max-width: 45%; */
-        margin-bottom: 20px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .feature {
-        flex: 1 1 40%;
-        /* max-width: 100%; */
-    }
-}
-
-@media (max-width: 480px) {
-    .features-section {
-        display: flex;
-        justify-content: center;
-    }
-
-    .feature {
-        padding: 15px;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    p {
-        font-size: 0.9em;
-    }
 }
 
 
@@ -1132,217 +620,7 @@ p {
     height: auto;
 }
 
-/* Media Query for screen sizes between 1024px and 768px */
-@media (max-width: 1024px) {
-    .icon-title {
-        margin-top: -100px;
-        margin-right: 250px;
-    }
 
-    .svg-container .icon-title h2 {
-        font-size: 40px;
-    }
-
-    .svg-container .icon-title p {
-        font-size: 28px;
-    }
-
-    .shop-now-button-2 {
-        font-size: 18px;
-        padding: 12px 25px;
-    }
-
-    .svg-image-1,
-    .svg-image-2,
-    .svg-image-3,
-    .svg-image-4 {
-        width: 120px;
-    }
-
-    .diamond-shape img {
-        width: 250px;
-    }
-
-    .svg-container .diamond-icon {
-        top: -30px;
-        right: 30px;
-    }
-
-    .heart-diamond-icon {
-        top: 85%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-/* Media Query for screen sizes below 768px */
-@media (max-width: 768px) {
-    .svg-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px;
-    }
-
-    .icon-title {
-
-        text-align: center;
-    }
-
-    .svg-container .icon-title h2 {
-        font-size: 32px;
-    }
-
-    .svg-container .icon-title p {
-        font-size: 20px;
-    }
-
-    .shop-now-button-2 {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .svg-image-1,
-    .svg-image-2,
-    .svg-image-3,
-    .svg-image-4 {
-        width: 100px;
-    }
-
-    .diamond-shape img {
-        width: 200px;
-    }
-
-    .svg-container .star-icon {
-        margin-right: 115%;
-    }
-
-    .svg-container .diamond-icon {
-        position: relative;
-        top: -38px;
-        right: -80px;
-        margin-bottom: -90px;
-    }
-
-    .heart-diamond-icon {
-        position: relative;
-        top: -104px;
-        left: 80px;
-        transform: none;
-        margin-bottom: 20px;
-    }
-
-    .diamond-shape {
-        position: relative;
-        /* right: 0; */
-        top: -80px;
-    }
-}
-
-/* Responsive styles */
-@media (max-width: 1024px) {
-    .product-section {
-        flex-direction: column;
-        margin: 0 20px;
-    }
-
-    .product-info {
-        left: 0;
-        top: 0;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .product-title {
-        font-size: 32px;
-    }
-
-    .product-title::after {
-        width: 60%;
-    }
-
-    .product-slider {
-        width: 100%;
-    }
-
-    .slide {
-        flex: 0 0 33.33%;
-    }
-
-    .slider-wrapper {
-        width: 300%;
-    }
-
-    .card-title::before,
-    .card-title::after {
-        width: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .product-info {
-        text-align: center;
-    }
-
-    .product-title {
-        font-size: 28px;
-    }
-
-    .product-title::after {
-        width: 50%;
-    }
-
-    .product-description {
-        font-size: 14px;
-    }
-
-    .slide {
-        flex: 0 0 50%;
-    }
-
-    .slider-wrapper {
-        width: 200%;
-    }
-
-    .card-title::before,
-    .card-title::after {
-        width: 25px;
-    }
-}
-
-@media (max-width: 576px) {
-    .product-section {
-        padding: 10px;
-    }
-
-    .product-title {
-        font-size: 24px;
-    }
-
-    .product-title::after {
-        width: 40%;
-    }
-
-    .product-description {
-        font-size: 12px;
-    }
-
-    .slide {
-        flex: 0 0 100%;
-    }
-
-    .slider-wrapper {
-        width: 100%;
-    }
-
-    .card {
-        width: 90%;
-    }
-
-    .card-title::before,
-    .card-title::after {
-        width: 20px;
-    }
-}
 
 .diamond-info .row {
     display: flex;
@@ -1394,44 +672,7 @@ p {
     letter-spacing: 2px;
 }
 
-/* Medium screens (Tablets and small desktops) */
-@media (min-width: 768px) and (max-width: 1199px) {
-    .diamond-info .row {
-        padding: 2rem 0;
-    }
 
-    .diamond-info .row .content h3 {
-        font-size: 38px;
-    }
-
-    .diamond-info .row .content p {
-        font-size: 1.4rem;
-        width: 85%;
-    }
-}
-
-/* Small screens (Phones) */
-@media (max-width: 767px) {
-    .diamond-info .row {
-        flex-direction: column;
-        padding: 1.5rem 0;
-    }
-
-    .diamond-info .row .image,
-    .diamond-info .row .content {
-        flex: 1 1 100%;
-        margin-left: 0;
-    }
-
-    .diamond-info .row .content h3 {
-        font-size: 30px;
-    }
-
-    .diamond-info .row .content p {
-        font-size: 1.3rem;
-        width: 100%;
-    }
-}
 
 
 .image-swiper-container {
@@ -1449,11 +690,11 @@ p {
 
 .swiper-container {
     position: relative;
-
+    right: 20%;
 }
 
 .swiper {
-    width: 100%;
+    width: 135%;
     padding: 60px 0 95px 0;
 
 }
@@ -1486,7 +727,7 @@ p {
     background: white;
     border-radius: 50%;
     top: 47%;
-    Left: -30px;
+    Left: -35px;
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
@@ -1504,7 +745,7 @@ p {
     background: white;
     border-radius: 50%;
     top: 47%;
-    right: -30px;
+    left: 133%;
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.17);
@@ -1518,13 +759,7 @@ p {
     font-size: 25px;
 }
 
-@media (min-width:760px) {
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: flex;
-    }
-}
 
 
 /* Title Styling */
@@ -1572,7 +807,7 @@ p {
 .text-overlay {
     position: absolute;
     bottom: 4px;
-    left: 0px;
+    left: 43px;
     width: 280px;
     height: 200px;
     background: linear-gradient(rgba(0, 0, 61, 0),
@@ -1589,10 +824,12 @@ p {
 
 .text-overlay h6 {
     margin: 0;
-    /* Remove default margin */
-    font-size: 16px;
-    /* Adjust as needed */
-    margin-top: 60%;
+    margin-top: 50%;
+    font-family: "Kurale";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 38.43px;
+
 }
 
 
@@ -1642,67 +879,6 @@ p {
     font-style: normal;
 }
 
-@media (max-width: 1024px) {
-    .Appointment {
-        height: 70vh;
-        /* Reduce height on medium screens */
-    }
-
-    .Appointment-title {
-        right: 0%;
-    }
-
-    .Appointment-title h1 {
-        font-size: 48px;
-        /* Reduce font size */
-    }
-
-    .Appointment-title p {
-        font-size: 20px;
-        /* Reduce font size */
-    }
-}
-
-@media (max-width: 768px) {
-    .Appointment {
-        height: 50vh;
-        /* Further reduce height on smaller screens */
-    }
-
-    .Appointment-title h1 {
-        font-size: 36px;
-        /* Further reduce font size */
-    }
-
-    .Appointment-title p {
-        font-size: 18px;
-        /* Further reduce font size */
-    }
-}
-
-@media (min-width: 605px) {}
-
-@media (max-width: 480px) {
-    .Appointment {
-        height: auto;
-        /* Allow height to be flexible on mobile */
-        padding: 40px 20px;
-        /* Add more padding for comfort */
-        width: max-content;
-    }
-
-    .Appointment-title h1 {
-        font-size: 28px;
-        /* Further reduce font size for mobile */
-    }
-
-    .Appointment-title p {
-        font-size: 16px;
-        /* Further reduce font size for mobile */
-    }
-
-
-}
 
 .review {
     position: relative;
@@ -2091,7 +1267,7 @@ p {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid #252525;
+    border-top: 1px solid #000000;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
@@ -2135,16 +1311,3 @@ p {
     /* Icon color on hover */
 }
 
-@media (max-width: 768px) {
-    .footer-links {
-        flex-direction: column;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-    }
-
-    .social-icons {
-        margin-top: 10px;
-    }
-}
