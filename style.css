@@ -717,7 +717,7 @@ p {
 }
 
 .swiper-slide .slide-content img {
-    width: 280px;
+    width: 300px;
     height: 350px;
     border-radius: 20px;
 
@@ -759,9 +759,6 @@ p {
     font-size: 25px;
 }
 
-
-
-
 /* Title Styling */
 .swiper-title {
     margin-top: 20px;
@@ -779,7 +776,7 @@ p {
     /* Center the text */
     color: #fff;
     /* Set text color to contrast with background */
-    background-size: 13%;
+    background-size: 18%;
     background-position: bottom;
 }
 
@@ -807,8 +804,8 @@ p {
 .text-overlay {
     position: absolute;
     bottom: 4px;
-    left: 43px;
-    width: 280px;
+    left: 33px;
+    width: 300px;
     height: 200px;
     background: linear-gradient(rgba(0, 0, 61, 0),
             /* End color with transparency */
@@ -1310,4 +1307,3 @@ p {
     color: #fff;
     /* Icon color on hover */
 }
-

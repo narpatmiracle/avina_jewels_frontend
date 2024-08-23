@@ -56,10 +56,6 @@ var swiper = new Swiper(".swiper", {
     },
     loop: true,
     loopedSlides: 3, // Adjust this based on the number of slides you have
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     keyboard: {
         enabled: true,
     },
@@ -78,6 +74,7 @@ var swiper = new Swiper(".swiper", {
             slidesPerView: 3,
         },
     },
+    
 });
 
 
@@ -100,6 +97,15 @@ const testimonials = [
         overlayName: "Jamis john",
         overlayTitle: "Creative Director"
     },
+    {
+        profilePicture: "./images/review/03.jpg",
+        name: "john sinha",
+        title: "Social Media Manager",
+        quote: "The service was outstanding, and the product quality exceeded my expectations. I will definitely recommend this to my colleagues.",
+        overlayPicture: "./images/review/02.jpg",
+        overlayName: "Jamis john",
+        overlayTitle: "Creative Director"
+    },
     // Add more testimonials here...
 ];
 
@@ -110,11 +116,16 @@ function updateTestimonial(index) {
     document.querySelector('.overlay-title img').src = testimonial.profilePicture;
     document.querySelector('.profile-picture img').src = testimonial.profilePicture;
     document.querySelector('.testimonial-content h3').textContent = testimonial.name;
-    document.querySelector('.testimonial-content p').textContent = testimonial.title;
+    document.querySelector('.testimonial-content h6').textContent = testimonial.title;
     document.querySelector('.testimonial-content blockquote p').textContent = testimonial.quote;
-    document.querySelector('.profile-overlay img').src = testimonial.overlayPicture;
-    document.querySelector('.profile-overlay h3').textContent = testimonial.overlayName;
-    document.querySelector('.profile-overlay p').textContent = testimonial.overlayTitle;
+    // document.querySelector('.profile-overlay img').src = testimonial.overlayPicture;
+    // document.querySelector('.profile-overlay h3').textContent = testimonial.overlayName;
+    // document.querySelector('.profile-overlay p').textContent = testimonial.overlayTitle;
+}
+
+function showNextTestimonial() {
+    currentTestimonialIndex = (currentTestimonialIndex === testimonials.length - 1) ? 0 : currentTestimonialIndex + 1;
+    updateTestimonial(currentTestimonialIndex);
 }
 
 document.querySelector('.prev-btn').addEventListener('click', function () {
@@ -123,9 +134,11 @@ document.querySelector('.prev-btn').addEventListener('click', function () {
 });
 
 document.querySelector('.next-btn').addEventListener('click', function () {
-    currentTestimonialIndex = (currentTestimonialIndex === testimonials.length - 1) ? 0 : currentTestimonialIndex + 1;
-    updateTestimonial(currentTestimonialIndex);
+    showNextTestimonial(); // Use the function for next button as well
 });
 
 // Initialize the first testimonial
 updateTestimonial(currentTestimonialIndex);
+
+// Set up automatic scrolling
+setInterval(showNextTestimonial, 5000); // Change testimonials every 5 seconds
