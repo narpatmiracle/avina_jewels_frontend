@@ -1644,52 +1644,507 @@ p {
 
 @media (max-width: 1024px) {
     .Appointment {
-        height: 70vh; /* Reduce height on medium screens */
+        height: 70vh;
+        /* Reduce height on medium screens */
     }
-    .Appointment-title{
+
+    .Appointment-title {
         right: 0%;
     }
-    
+
     .Appointment-title h1 {
-        font-size: 48px; /* Reduce font size */
+        font-size: 48px;
+        /* Reduce font size */
     }
-    
+
     .Appointment-title p {
-        font-size: 20px; /* Reduce font size */
+        font-size: 20px;
+        /* Reduce font size */
     }
 }
 
 @media (max-width: 768px) {
     .Appointment {
-        height: 50vh; /* Further reduce height on smaller screens */
+        height: 50vh;
+        /* Further reduce height on smaller screens */
     }
-    
-    .Appointment-title h1 {
-        font-size: 36px; /* Further reduce font size */
-    }
-    
-    .Appointment-title p {
-        font-size: 18px; /* Further reduce font size */
-    }
-}
-@media (min-width: 605px) {
 
+    .Appointment-title h1 {
+        font-size: 36px;
+        /* Further reduce font size */
+    }
+
+    .Appointment-title p {
+        font-size: 18px;
+        /* Further reduce font size */
+    }
 }
+
+@media (min-width: 605px) {}
 
 @media (max-width: 480px) {
     .Appointment {
-        height: auto; /* Allow height to be flexible on mobile */
-        padding: 40px 20px; /* Add more padding for comfort */
+        height: auto;
+        /* Allow height to be flexible on mobile */
+        padding: 40px 20px;
+        /* Add more padding for comfort */
         width: max-content;
     }
-    
+
     .Appointment-title h1 {
-        font-size: 28px; /* Further reduce font size for mobile */
+        font-size: 28px;
+        /* Further reduce font size for mobile */
     }
-    
+
     .Appointment-title p {
-        font-size: 16px; /* Further reduce font size for mobile */
+        font-size: 16px;
+        /* Further reduce font size for mobile */
     }
-    
-   
+
+
+}
+
+.review {
+    position: relative;
+    margin: 0 auto;
+    width: calc(min(51rem, 90%));
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review-title {
+    margin-top: 20px;
+    background-image: url('./images/story_images/Vector (3).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    background-size: 18%;
+    background-position: bottom;
+}
+
+.review-title h6 {
+    font-size: 20px;
+    color: #00003D;
+    margin-bottom: 5px;
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.review-title h1 {
+    font-size: 60px;
+    color: #00003D;
+    margin: 0;
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    right: 220px;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    left: 170px;
+}
+
+
+.profile-picture img {
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.testimonial-content {
+    max-width: 600px;
+}
+
+.testimonial-content h3 {
+    font-size: 24px;
+    color: #00003D;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.testimonial-content p {
+    color: #777;
+    margin-bottom: 20px;
+    font-size: 28px;
+    width: 630px;
+    margin-top: 20%;
+}
+
+.testimonial-content p::before {
+    content: open-quote;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+    font-size: 110px;
+    color: #555;
+}
+
+.testimonial-content p::after {
+    content: close-quote;
+    position: absolute;
+    bottom: 50px;
+    right: -5%;
+    font-size: 110px;
+
+    /* Adjust the size as needed */
+    color: #555;
+    /* Adjust the color if necessary */
+}
+
+
+.profile-overlay {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.overlay-content {
+    display: contents;
+}
+
+.overlay-content img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.overlay-content h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #00003D;
+}
+
+.overlay-content p {
+    margin: 0;
+    color: #777;
+}
+
+
+
+.testimonial-navigation {
+    position: absolute;
+    bottom: 80px;
+    left: 70%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.testimonial-navigation button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.testimonial-navigation button:hover {
+    color: #0056b3;
+}
+
+.overlay-title {
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-title img {
+    width: 100px;
+    /* Set the width you need */
+    height: 100px;
+    /* Set the height you need */
+    object-fit: cover;
+    /* This ensures the image covers the entire area, cropping if necessary */
+    border-radius: 50%;
+    /* Optional: Makes the image circular */
+    overflow: hidden;
+}
+
+.overlay-title h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #00003D;
+}
+
+.overlay-title p {
+    margin: 0;
+    color: #777;
+}
+
+.overlay-title .content-details h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 4px;
+    color: #00003D;
+    margin-left: 20px;
+}
+
+.overlay-title .content-details h6 {
+    margin: 3px;
+    color: #777;
+    font-family: "Kurale";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.65px;
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.content-details {
+    width: 220px;
+
+}
+
+
+.footer {
+    background-color: #f7f7f7;
+    background-image: url('./images/footer-background.png');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Ensure the image covers the entire footer */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    padding: 40px 0;
+    color: #333;
+}
+
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/*  */
+
+.footer-logo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.logo-name img {
+    width: 111px;
+    /* Adjust the size of the logo as needed */
+    height: 110px;
+    margin-right: 15px;
+    /* Space between logo and text */
+}
+
+.logo-name h1 {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Adjust the color as needed */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    width: 51%;
+}
+
+/*  */
+
+
+.footer-logo {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-logo h1 {
+    font-family: "Cinzel";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 59.31px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    width: 51%;
+
+}
+
+.footer-links {
+    flex: 3;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    color: #00003D;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00003D;
+    display: inline-block;
+    padding-bottom: 20px;
+    font-family: "Federo";
+    font-weight: 400;
+    /* line-height: 0px; */
+    text-align: left;
+
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #252525;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+
+    font-family: "Kurale";
+    font-weight: 400;
+    line-height: 23.65px;
+    text-align: left;
+
+}
+
+.footer-column ul li a:hover {
+    color: #222;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #252525;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #252525;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    /* Adjust size as needed */
+    height: 40px;
+    /* Adjust size as needed */
+    line-height: 40px;
+    /* Center the icon vertically */
+    text-align: center;
+    /* Center the icon horizontally */
+    margin-right: 10px;
+    /* Space between icons */
+    border: 1px solid #333;
+    /* 1px solid border */
+    border-radius: 50%;
+    /* Rounded corners */
+    color: #333;
+    /* Icon color */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition on hover */
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    /* Background color on hover */
+    color: #fff;
+    /* Icon color on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
 }
