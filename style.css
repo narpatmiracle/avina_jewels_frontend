@@ -189,8 +189,8 @@ body {
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto;
+
+    margin: 10px auto;
 }
 
 nav {
@@ -203,7 +203,7 @@ nav {
 }
 
 .nav-item {
-    margin: 0 60px;
+    margin: 0 40px;
     list-style: none;
 }
 
@@ -690,11 +690,11 @@ p {
 
 .swiper-container {
     position: relative;
-    right: 20%;
+    right: 25%;
 }
 
 .swiper {
-    width: 135%;
+    width: 150%;
     padding: 60px 0 95px 0;
 
 }
@@ -804,7 +804,7 @@ p {
 .text-overlay {
     position: absolute;
     bottom: 4px;
-    left: 33px;
+    left: 53px;
     width: 300px;
     height: 200px;
     background: linear-gradient(rgba(0, 0, 61, 0),
@@ -1306,4 +1306,129 @@ p {
     /* Background color on hover */
     color: #fff;
     /* Icon color on hover */
+}
+
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    padding: 50px;
+    background-image: url('./images/Group 389 (2).png');
+    /* Update path if necessary */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.video-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    position: relative;
+    top: -125px;
+}
+
+.text-content .text-image {
+    width: 24%;
+    height: auto;
+    position: relative;
+    left: 12%;
+    top: 200px;
+}
+
+.text-content h6 {
+    position: relative;
+    top: 40px;
+    font-family: "Kurale";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.65px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-left: 155px;
+}
+
+.text-content h2 {
+    margin-left: 155px;
+    width: 60%;
+    margin-bottom: 20px;
+    font-family: "Federo";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 82.48px;
+    text-align: left;
+}
+
+.text-content h2 span {
+    color: #FFD700;
+}
+
+.text-content p {
+    width: 418px;
+    margin-left: 155px;
+    font-family: "Kurale";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.6px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.video-slider {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    left: 50px;
+}
+
+.video-container {
+    min-width: 60%;
+    transition: transform 0.5s ease-in-out;
+}
+
+video {
+    width: 400px;
+    border: 2px solid rgba(249, 213, 46, 1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+video:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the video on hover */
+    box-shadow: 0px 6px 15px rgba(249, 213, 46, 1);
+    /* More pronounced shadow on hover */
+    border: 2px solid rgba(249, 213, 46, 1);
+    /* Border color on hover */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #FFD700;
+    border: none;
+    cursor: pointer;
+    color: #0B0C28;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #FFC300;
 }

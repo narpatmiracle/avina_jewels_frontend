@@ -74,7 +74,7 @@ var swiper = new Swiper(".swiper", {
             slidesPerView: 3,
         },
     },
-    
+
 });
 
 
@@ -142,3 +142,47 @@ updateTestimonial(currentTestimonialIndex);
 
 // Set up automatic scrolling
 setInterval(showNextTestimonial, 5000); // Change testimonials every 5 seconds
+
+
+
+let currentIndex = 0;
+const videos = document.querySelectorAll('.video-container');
+const totalVideos = videos.length;
+const autoScrollInterval = 10000; // 10 seconds
+
+// Function to update the slider
+function updateSlider() {
+    const offset = -currentIndex * 100;
+    videos.forEach(video => {
+        video.style.transform = `translateX(${offset}%)`;
+    });
+}
+
+// Event listener for next button
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalVideos;
+    updateSlider();
+});
+
+// Event listener for prev button
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalVideos) % totalVideos;
+    updateSlider();
+});
+
+// Function to automatically move to the next video
+function autoScroll() {
+    currentIndex = (currentIndex + 1) % totalVideos;
+    updateSlider();
+}
+
+// Set up automatic scrolling every 5 seconds
+setInterval(autoScroll, autoScrollInterval);
+
+
+
+
+
+
+
+
